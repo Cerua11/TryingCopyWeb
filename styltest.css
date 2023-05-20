@@ -1,0 +1,295 @@
+:root{
+    --main-header-color:#273535;
+    --font-color:#f1c6c6;
+    --borders-color:#ac7853;
+    --button-color:#d1935f;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+nav{
+
+    background-color: var(--main-header-color);
+    height: 125px;
+    width:100%;
+    color:var(--font-color);
+
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+
+    border-bottom:solid 3px orange;
+   
+    
+}
+.contact{
+   width:100%;
+
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    align-self: center;
+
+}
+.ustaw{
+    position: absolute;
+    display: block;
+
+    right:0;
+    margin-right: 1%;
+    margin-top:.6%;
+
+}
+.contact h1{
+    color:white;
+
+    font-size:16px;
+    letter-spacing: 2px;
+
+    margin:7px 0px;
+    display: block;
+   
+}
+.contact h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color:orange;
+
+    margin:7px 0;
+    display: block;
+    
+}
+.contact h3{
+    color:gray;
+    font-size:16px;
+    letter-spacing: 1px;
+
+    margin:7px 0; 
+    display: block;
+}
+
+#menu2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#menu2 > ul{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:10%;
+    font-size:18px;
+    font-family:'Franklin Gothic Medium';
+    list-style-type: none;
+    
+}
+
+img{
+    width:100px;
+   display:flex;
+   justify-content: center;
+   cursor:pointer;
+   
+    
+}
+.icon a{
+    cursor:pointer;
+}
+
+
+#logo{
+    display:block;
+}
+li:hover{
+    color: var(--button-color);
+    cursor:pointer;
+}
+
+#lets-tattoo{
+    width:100%;
+    height:635px;
+    background-image: url(tattoomaker4.jpg);
+    background-position: center center;
+    background-size: 100% auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lets-tattoo > aside{
+    width:100%;
+      height: 100%;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+aside > h1{
+    color:white;
+    font-size:38px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 700;
+    padding-bottom:30px;
+    border-bottom:solid 2px orange;
+}
+
+aside > p{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin: 30px 0;
+    
+}
+#button1{
+    padding:30px 120px;
+    border:solid 3px var(--button-color);
+    display: flex;
+    justify-content:center;
+    margin-top: 5rem;
+    font-size:24px;
+    font-weight: 700;
+   
+    
+    background-color: var(--button-color);
+    color:var(--main-header-color);
+
+}
+#button1:hover{
+    background-color: var(--font-color);
+}
+.main1{
+    display: block;
+}
+
+#section1{
+  
+    background-color: var(--main-header-color);
+    padding:80px 0;
+    display: flex;
+    justify-content: space-between;
+    height:1000px;
+
+}
+article#article1{
+    width: 50%;
+    
+   
+
+}
+
+section > article{
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+#article1 p{
+    margin:25px 0;
+    color:white;
+    font-size:20px;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+#article1 li{
+    
+    font-size:20px;
+    letter-spacing: 2px;
+    margin:15px 0;
+    color:white;
+    list-style-type: none;
+
+}
+.libf::before{
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background: #d1935f;
+    position: absolute;
+    left: 20px;
+    top: 9px;
+    border-radius: 50%;
+    margin:0;
+}
+
+.lii li{
+    padding-left:10%;
+    position: relative;
+}
+#article1 h1{
+    font-size:50px;
+    letter-spacing: 3px;
+    color:var(--font-color);
+    position: relative;
+    display: inline-block;
+    margin: 0 0 40px;
+}
+#article1 h1::after{
+    content:" ";
+    position:absolute;
+    bottom:-16px;
+    width:100%;
+    height:2px;
+    background-color: var(--font-color);
+    left:0;
+}
+:after, :before{
+    box-sizing: border-box;
+}
+#article2{
+    width:50%;
+display: flex;
+
+}
+#article2 img {
+  
+  width: 45vw;
+
+
+    left:45%;
+    top:635px;
+    position: absolute;
+    height: 106.25%;
+    object-fit: cover;
+
+}
+
+#logoo{
+    position: relative;
+}
+/* MEDIA */
+
+@media screen and (max-width: 1450px){
+nav>#menu2>ul,nav{
+
+   justify-content: flex-start;
+}
+#menu2> ul{
+    gap:10%;
+    font-size:16px;
+
+    
+}
+#menu2{
+    margin-left:2.5%;
+}
+#logoo{
+    order:-1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+}
